@@ -1,0 +1,5 @@
+# Controle de acesso para buscadores/indexadores
+
+User-agent: *
+Disallow: /modulos/
+Disallow: /config/
