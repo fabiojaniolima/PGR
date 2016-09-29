@@ -64,8 +64,7 @@ class ConectorWmi
         }
         catch (com_exception $e)
         {
-            $posicao = strripos($e->getMessage(), 'Description') + 17;
-            self::$mensagemErro = $e->getCode(); 
+            self::$mensagemErro = utf8_encode($e->getMessage());
         }
         catch (Exception $e)
         {
