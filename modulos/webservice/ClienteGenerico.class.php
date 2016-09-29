@@ -57,7 +57,7 @@ class ClienteGenerico
      * 
      * @param string $agente
      */
-    public function setAgent($agente = "PHP Health Check")
+    public function setAgent($agente = "PHP ClienteGenerico")
     {
         curl_setopt($this->curl, CURLOPT_USERAGENT, $agente);
     }
@@ -68,12 +68,12 @@ class ClienteGenerico
      * @param string $post
      * @param array $header
      */
-    public function setPost($post, array $header = null)
+    public function setPost($post = null, array $header = null)
     {
         if (!$header)
         {
             $header = array(
-                "Content-type: text/xml;charset=\"utf-8\"",
+                "Content-type: text/xml;charset=UTF-8",
                 "Accept: text/xml",
                 "Cache-Control: no-cache",
                 "Pragma: no-cache",
