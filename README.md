@@ -29,6 +29,7 @@ Solução web para gerenciamento remoto de ativos de TI. Essa solução dispensa
 - Módulo de consulta
     - [x] Healt Check
     - [x] Ping
+    - [x] Socket
     - [x] Traceroute
 - Módulo WebSercide
     - [x] Soap
@@ -93,3 +94,5 @@ Instrumentação de Gerenciamento do Windows (WMI-Saída)
 
 ## 5 - Considerações finais
 Em ambientes Windows, para não ter problemas, sugiro que o usuário de conexão remota tenha privilégio de administrador. Caso já tenha familiaridade com WMI e o esquema de permissão de contexto do Windows, poderá configurar o nível de acesso em cada cliente para o contexto remoto a ser "manipulado".
+
+Para maiores informações quanto a privilégio de acesso, veja: http://www-01.ibm.com/support/docview.wss?uid=swg21681046
