@@ -51,12 +51,10 @@ class ConectorWmi
              * @param int $errno valor de sistema
              * @param string $errstr mensagem de sistema
              * @param int $timeout tempo máximo a esperar por uma tentativa de conexão via socket
-             */
-            $connection = @fsockopen($maquina, $port = 135, $errno = null, $errstr = null, $timeout = 10);
-
-            if (!$connection)
+             */            
+            if (!@fsockopen($maquina, $port = 135, $errno, $errstr, $timeout = 10))
             {
-                throw new Exception("Erro: Time Out ao tentar se conectar ao destino <b>{$maquina}</b>!");
+                throw new Exception("Erro ({$errno}): Time Out ao chamar o host <b>{$maquina}</b>!");
             }
 
             $WbemLocator = new COM("WbemScripting.SWbemLocator");
