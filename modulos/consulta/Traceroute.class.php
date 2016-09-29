@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Está classe permite rastear o caminho até um host
+ * Está classe permite rastrear o caminho até um host
  * 
  * @package     Módulos
  * @subpackage  Consulta
